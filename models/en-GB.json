@@ -1,86 +1,100 @@
 {
-  "interactionModel": {
-    "languageModel": {
-      "invocationName": "quiz rhino",
-      "intents": [
-        {
-          "name": "AMAZON.CancelIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.HelpIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.StopIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.NoIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.YesIntent",
-          "samples": []
-        },
-        {
-          "name": "QuestionIntent",
-          "samples": [
-            "question me",
-            "test my knowledge",
-            "test my knowledge please",
-            "ask me a question",
-            "next question",
-            "please test my knowledge"
-          ]
-        },
-        {
-          "name": "TrueFactIntent",
-          "samples": [
-            "yes",
-            "that is correct",
-            "that is true",
-            "correct",
-            "true"
-          ]
-        },
-        {
-          "name": "FalseFactIntent",
-          "samples": [
-            "no",
-            "not true",
-            "false",
-            "incorrect",
-            "that is incorrect",
-            "that is false"
-          ]
-        },
-        {
-          "name": "ScoreIntent",
-          "samples": [
-            "points",
-            "how many points do  i have",
-            "tell me the score",
-            "what is the score",
-            "what score",
-            "score"
-          ]
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "quiz rhino",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "no",
+                        "incorrect",
+                        "false"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": [
+                        "give me a question",
+                        "for a question",
+                        "a question",
+                        "question",
+                        "ask me another question",
+                        "ask me a question",
+                        "one more please",
+                        "give me another question please",
+                        "new question",
+                        "what is the next question",
+                        "next question"
+                    ]
+                },
+                {
+                    "name": "ScoreIntent",
+                    "slots": [],
+                    "samples": [
+                        "how many points do i have",
+                        "tell me my score",
+                        "whats the score",
+                        "what was my score"
+                    ]
+                },
+                {
+                    "name": "lastQuestionIntent",
+                    "slots": [],
+                    "samples": [
+                        "what was that question again",
+                        "last question",
+                        "what was the last question i asked"
+                    ]
+                },
+                {
+                    "name": "YesIntent",
+                    "slots": [],
+                    "samples": [
+                        "correct that is true",
+                        "yes that is correct",
+                        "yes that is true",
+                        "yes",
+                        "my answer is yes",
+                        "the answer is true",
+                        "the answer is correct",
+                        "it is correct",
+                        "that is true"
+                    ]
+                },
+                {
+                    "name": "NoIntent",
+                    "slots": [],
+                    "samples": [
+                        "not true",
+                        "false",
+                        "untrue",
+                        "wrong",
+                        "incorrect",
+                        "that is completely wrong",
+                        "that is wrong",
+                        "that is incorrect",
+                        "that is false",
+                        "that is not true"
+                    ]
+                }
+            ],
+            "types": []
         }
-      ],
-      "types": [
-        {
-          "values": [
-            {
-              "id": "",
-              "name": {
-                "value": "No",
-                "synonyms": []
-              }
-            }
-          ],
-          "name": "STOP_MESSAGE"
-        }
-      ]
     }
-  }
 }
